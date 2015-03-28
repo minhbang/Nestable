@@ -1,0 +1,22 @@
+{
+  "name": "mb-nestable",
+  "version": "0.1",
+  "homepage": "https://github.com/minhbang/Nestable",
+  "authors": [
+    "Minh Bằng <contact@minhbang.com>"
+  ],
+  "description": "forked from dbushell/Nestable",
+  "main": "jquery.nestable.js",
+  "keywords": [
+    "nestable",
+    "minhbang"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
