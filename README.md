@@ -3,7 +3,7 @@ Nestable
 
 ## PLEASE NOTE
 
-**I cannot provide any support or guidance beyond this README. If this code helps you that's great but I have no plans to develop Nestable beyond this demo (it's not a final product and has limited functionality). I cannot reply to any requests for help.**
+**Có thay đổi mục đich sử dụng có nhân**
 
 * * *
 
@@ -84,21 +84,6 @@ These advanced config options are also available:
 * `collapseBtnHTML` The HTML text used to generate a list item collapse button (default `'<button data-action="collapse">Collapse</button>'`)
 
 **Inspect the [Nestable Demo](http://dbushell.github.com/Nestable/) for guidance.**
-
-## Change Log
-
-### 15th October 2012
-
-* Merge for Zepto.js support
-* Merge fix for remove/detach items
-
-### 27th June 2012
-
-* Added `maxDepth` option (default to 5)
-* Added empty placeholder
-* Updated CSS class structure with options for `listClass` and `itemClass`.
-* Fixed to allow drag and drop between multiple Nestable instances (off by default).
-* Added `group` option to enabled the above.
 
 * * *
 
