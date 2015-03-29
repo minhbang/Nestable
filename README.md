@@ -3,7 +3,7 @@ Nestable
 
 ## PLEASE NOTE
 
-**Có thay đổi mục đich sử dụng có nhân**
+**Có thay đổi mục đích sử dụng cá nhân**
 
 * * *
 
