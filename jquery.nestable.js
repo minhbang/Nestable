@@ -132,7 +132,38 @@
             }
 
         },
+        reinit: function() {
+            // alias
+            var list = this;
 
+            // remove expand/collapse controls
+            $.each(this.el.find(this.options.itemNodeName), function(k, el) {
+                list.expandItem($(el));
+
+                // if has <ol> child - remove previously prepended buttons
+                if ($(el).children(list.options.listNodeName).length) {
+                    $(el).children('button').remove();
+                }
+            });
+
+            // remove delegated event handlers
+            list.el.off('click', 'button');
+
+            var hasTouch = 'ontouchstart' in document;
+            if (hasTouch) {
+                list.el.off('touchstart');
+                list.w.off('touchmove');
+                list.w.off('touchend');
+                list.w.off('touchcancel');
+            }
+
+            list.el.off('mousedown');
+            list.w.off('mousemove');
+            list.w.off('mouseup');
+
+            // call init again
+            list.init();
+        },
         serialize: function () {
             var data,
                 depth = 0,
