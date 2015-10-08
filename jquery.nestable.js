@@ -4,7 +4,8 @@
  */
 ;
 (function ($, window, document, undefined) {
-    var hasTouch = 'ontouchstart' in window;
+    var hasTouch = 'ontouchstart' in window // works on most browsers
+        || 'onmsgesturechange' in window; // works on ie10
 
     /**
      * Detect CSS pointer-events property
@@ -132,12 +133,12 @@
             }
 
         },
-        reinit: function() {
+        reinit: function () {
             // alias
             var list = this;
 
             // remove expand/collapse controls
-            $.each(this.el.find(this.options.itemNodeName), function(k, el) {
+            $.each(this.el.find(this.options.itemNodeName), function (k, el) {
                 list.expandItem($(el));
 
                 // if has <ol> child - remove previously prepended buttons
