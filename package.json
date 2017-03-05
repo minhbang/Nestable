@@ -1,0 +1,17 @@
+{
+  "name": "nestable",
+  "version": "0.2.0",
+  "description": "Drag & drop hierarchical list with mouse and touch compatibility (jQuery plugin)",
+  "main": "jquery.nestable.js",
+  "scripts": {
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/minhbang/Nestable"
+  },
+  "license": "ISC",
+  "peerDependencies": {},
+  "dependencies": {},
+  "devDependencies": {},
+  "keywords": []
+}
